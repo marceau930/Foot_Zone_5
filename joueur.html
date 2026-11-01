@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FootZone - Les 8 stars du football</title>
+  <link rel="stylesheet" href="joueur.css">
+  <script src="joueur.js" defer></script>
+</head>
+<body>
+
+          <header class="topbar">
+        <a class="logo" href="index.html">
+            <span class="logo-ball">⚽</span>
+            Foot<span>Zone</span>
+        </a>
+        <button class="menu-toggle" aria-label="Ouvrir le menu">
+            ☰
+        </button>
+        <nav class="nav">
+            <a href="index.html">Accueil</a>
+            <a href="premier.html">Premier League</a>
+            <a href="liga.html">Liga</a>
+            <a href="seria.html">Serie A</a>
+            <a href="bundesliga.html">Bundesliga</a>
+            <a href="ligue1.html">Ligue 1</a>
+            <a href="ldc.html">Ligue des champions</a>
+            <a href="club.html">Club européens</a>
+            <a href="joueur.html">Meilleurs joueurs</a>
+            <a href="favoris.html">Mes favoris</a>
+            <a href="trophe.html">Armoire à trophées</a>
+            <a href="trophe.html">Classement mondial</a>
+        </nav>
+
+    </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="hero-label">LES PLUS GRANDES STARS</p>
+        <h1>Les <span>8 stars</span> du football</h1>
+        <p class="hero-description">
+          Découvrez les fiches des plus grands joueurs du moment.
+        </p>
+      </div>
+
+      <div class="hero-player">
+        <div class="hero-number">10</div>
+      </div>
+
+      <div class="hero-slogan">
+        Le football<br>
+        unit les passions
+      </div>
+    </section>
+
+    <section class="players-section">
+      <div class="players-grid" id="players"></div>
+    </section>
+  </main>
+
+  <div class="modal" id="playerModal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal" aria-label="Fermer">&times;</button>
+      <div id="modalDetails"></div>
+    </div>
+  </div>
+
+  <footer>
+
+    <div class="footer-brand">
+      <a href="index.html" class="logo">Foot<span class="logo-blue">Zone</span></a>
+      <p>Plus qu'un site, une passion.</p>
+    </div>
+
+    <div class="footer-ball">⚽</div>
+    <p> 2026 Foot Zone — .BG Company </p>
+  </footer>
+
+</body>
+</html>

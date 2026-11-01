@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Classement mondial des clubs | Foot Zone</title>
+<link rel="stylesheet" href="classement.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="topbar">
+    <a href="index.html" class="logo">FOOT<span>ZONE</span></a>
+
+    <nav class="nav">
+            <a href="index.html">Accueil</a>
+            <a href="premier.html">Premier League</a>
+            <a href="liga.html">Liga</a>
+            <a href="seria.html">Serie A</a>
+            <a href="bundesliga.html">Bundesliga</a>
+            <a href="ligue1.html">Ligue 1</a>
+            <a href="ldc.html">Ligue des champions</a>
+            <a href="club.html">Club européens</a>
+            <a href="joueur.html">Meilleurs joueurs</a>
+            <a href="favoris.html">Mes favoris</a>
+            <a href="trophe.html">Armoire à trophées</a>
+            <a href="classement.html">Classement mondial</a>
+        </nav>
+</header>
+
+<main class="container">
+
+    <section class="hero">
+        <div class="hero-label">FOOT ZONE RANKING</div>
+        <h1>CLASSEMENT <span>MONDIAL</span></h1>
+        <p>Les meilleurs clubs de football de la planète.</p>
+        <div class="hero-info">
+            <span>🌍 Classement international</span>
+            <span>🏆 Saison 2026/2027</span>
+            <span>📊 Points Foot Zone</span>
+        </div>
+    </section>
+
+    <section class="podium-section">
+        <div class="section-heading">
+            <div>
+                <span class="small-title">LE TOP 3</span>
+                <h2>Les meilleurs clubs</h2>
+            </div>
+        </div>
+
+        <div class="podium" id="podium"></div>
+    </section>
+
+    <section class="ranking-section">
+
+        <div class="ranking-heading">
+            <div>
+                <span class="small-title">WORLD RANKING</span>
+                <h2>Classement général</h2>
+                <p id="clubCount">Classement des clubs</p>
+            </div>
+
+            <a href="https://www.fifa.com/" target="_blank" rel="noopener noreferrer" class="fifa-link">
+                Site officiel FIFA ↗
+            </a>
+        </div>
+
+        <div class="filters">
+            <input type="text" id="searchClub" placeholder="Rechercher un club...">
+
+            <select id="countryFilter">
+                <option value="all">Tous les pays</option>
+            </select>
+
+            <select id="sortFilter">
+                <option value="rank">Classement</option>
+            </select>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>RANG</th>
+                        <th>CLUB</th>
+                        <th>PAYS</th>
+                        <th>POINTS</th>
+                    </tr>
+                </thead>
+                <tbody id="rankingTable"></tbody>
+            </table>
+        </div>
+
+        <div class="empty-message" id="emptyMessage">
+            Aucun club trouvé.
+        </div>
+
+</main>
+
+<footer>
+    <p> 2026 Foot Zone — .BG Company</p>
+</footer>
+
+<script src="classement.js"></script>
+</body>
+</html>

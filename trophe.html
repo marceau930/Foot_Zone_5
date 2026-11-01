@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armoire à trophées</title>
+    <link rel="stylesheet" href="trophe.css">
+    <script src="trophe.js" defer></script>
+</head>
+<body>
+            <header class="topbar">
+        <a class="logo" href="index.html">
+            <span class="logo-ball">⚽</span>
+            Foot<span>Zone</span>
+        </a>
+        <button class="menu-toggle" aria-label="Ouvrir le menu">
+            ☰
+        </button>
+        <nav class="nav">
+            <a href="index.html">Accueil</a>
+            <a href="premier.html">Premier League</a>
+            <a href="liga.html">Liga</a>
+            <a href="seria.html">Serie A</a>
+            <a href="bundesliga.html">Bundesliga</a>
+            <a href="ligue1.html">Ligue 1</a>
+            <a href="ldc.html">Ligue des champions</a>
+            <a href="club.html">Club européens</a>
+            <a href="joueur.html">Meilleurs joueurs</a>
+            <a href="favoris.html">Mes favoris</a>
+            <a href="trophe.html">Armoire à trophées</a>
+            <a href="classement.html">Classement mondial</a>
+        </nav>
+
+    </header>
+
+<main class="container">
+
+    <section class="hero">
+        <div>
+            <p class="eyebrow">LES PLUS GRANDS CLUBS DE L'HISTOIRE</p>
+            <h1>ARMOIRE À <span>TROPHÉES</span></h1>
+            <p class="hero-description">
+                Découvre les clubs les plus titrés des grandes compétitions
+                européennes et nationales.
+            </p>
+            <div class="hero-info">
+                <span>● Palmarès historiques</span>
+                <span>Saison de référence : 2025-2026</span>
+            </div>
+        </div>
+        <div class="big-trophy">🏆</div>
+    </section>
+
+    <section class="competitions-section">
+
+        <div class="section-title">
+            <div>
+                <p class="eyebrow">EXPLORE LES PALMARÈS</p>
+                <h2>Les compétitions</h2>
+            </div>
+            <span id="competitionCount">11 compétitions</span>
+        </div>
+
+        <div class="filters">
+            <div class="filter-buttons">
+                <button class="filter active" data-filter="all">Toutes</button>
+                <button class="filter" data-filter="europe">Europe</button>
+                <button class="filter" data-filter="league">Championnats</button>
+                <button class="filter" data-filter="cup">Coupes</button>
+            </div>
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Rechercher une compétition..."
+            >
+        </div>
+
+        <div id="competitionGrid" class="competition-grid"></div>
+
+        <p id="emptyState" class="empty-state" hidden>
+            Aucune compétition trouvée.
+        </p>
+
+    </section>
+
+</main>
+
+<div id="detailDialog" class="modal">
+    <div class="modal-content">
+        <button id="closeModal" class="close-modal">×</button>
+        <div id="modalContent"></div>
+    </div>
+</div>
+
+<footer>
+    <div class="logo">🏆 FOOT<span>ARCHIVE</span></div>
+    <p>Les grandes histoires du football.</p>
+    <p>2026 Foot Zone — .BG Company</p>
+</footer>
+
+</body>
+</html>

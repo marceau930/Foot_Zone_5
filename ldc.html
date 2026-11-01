@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ligue des champions - FootZone</title>
+  <link rel="stylesheet" href="lds.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="index.html" class="logo">FOOT<span>ZONE</span> <span class="logo-ball">⚽</span></a>
+    <nav class="nav">
+            <a href="index.html">Accueil</a>
+            <a href="premier.html">Premier League</a>
+            <a href="liga.html">Liga</a>
+            <a href="seria.html">Serie A</a>
+            <a href="bundesliga.html">Bundesliga</a>
+            <a href="ligue1.html">Ligue 1</a>
+            <a href="ldc.html">Ligue des champions</a>
+            <a href="club.html">Club européens</a>
+            <a href="joueur.html">Meilleurs joueurs</a>
+            <a href="favoris.html">Mes favoris</a>
+            <a href="trophe.html">Armoire à trophées</a>
+            <a href="classement.html">Classement mondial</a>
+        </nav>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+  </header>
+
+  <main class="container">
+    <section class="page-hero">
+      <div>
+        <span class="hero-eyebrow">UEFA · SAISON 2026-2027</span>
+        <h1>Ligue des <span>Champions</span></h1>
+        <p>Le rendez-vous des plus grands clubs du football européen.</p>
+        <div class="hero-details">
+          <span>🏆 36 équipes</span>
+          <span>⚽ 8 journées</span>
+          <span>⭐ Une seule couronne</span>
+        </div>
+      </div>
+      <div class="page-flag">🏆</div>
+    </section>
+
+    <div class="notice">
+      <span class="live-dot"></span>
+      Phase de ligue · Classement et calendrier de la compétition
+    </div>
+
+    <section class="stats-grid">
+      <article class="stat-card">
+        <span>Équipes</span>
+        <strong id="totalEquipes">36</strong>
+        <small>Phase de ligue</small>
+      </article>
+      <article class="stat-card">
+        <span>Matchs disputés</span>
+        <strong id="totalMatchs">0</strong>
+        <small>Sur 144 rencontres</small>
+      </article>
+      <article class="stat-card">
+        <span>Buts marqués</span>
+        <strong id="totalButs">0</strong>
+        <small>Total des rencontres</small>
+      </article>
+      <article class="stat-card">
+        <span>Journée affichée</span>
+        <strong id="journeeActuelle">1</strong>
+        <small>Calendrier européen</small>
+      </article>
+    </section>
+    
+
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">PHASE DE LIGUE</span>
+          <h2>Classement général</h2>
+        </div>
+        <span class="fake-badge">36 CLUBS</span>
+      </div>
+
+      <div class="legend">
+        <span><i class="legend-blue"></i> Places 1 à 8 : huitièmes</span>
+        <span><i class="legend-yellow"></i> Places 9 à 24 : barrages</span>
+        <span><i class="legend-red"></i> Places 25 à 36 : éliminés</span>
+      </div>
+
+      <div class="data-panel">
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Club</th>
+                <th>J</th>
+                <th>V</th>
+                <th>N</th>
+                <th>D</th>
+                <th>BP</th>
+                <th>BC</th>
+                <th>Diff.</th>
+                <th>Pts</th>
+                <th>Forme</th>
+              </tr>
+            </thead>
+            <tbody id="classement"></tbody>
+          </table>
+        </div>
+        <p class="muted">J : joués · V : victoires · N : nuls · D : défaites · BP : buts pour · BC : buts contre</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">CALENDRIER OFFICIEL </span>
+          <h2>Résultats des journées</h2>
+        </div>
+      </div>
+      <div class="tabs" id="boutonsJournees"></div>
+      <div class="data-panel">
+        <div id="matchs" class="match-cards"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">OBJECTIF : LA FINALE</span>
+          <h2>Les étapes de la compétition</h2>
+        </div>
+      </div>
+      <div class="league-grid phases">
+        <article class="league-card">
+          <span class="phase-number">01</span>
+          <div><strong>Barrages</strong><small>Février 2027</small></div>
+        </article>
+        <article class="league-card">
+          <span class="phase-number">02</span>
+          <div><strong>Huitièmes de finale</strong><small>Mars 2027</small></div>
+        </article>
+        <article class="league-card">
+          <span class="phase-number">03</span>
+          <div><strong>Quarts de finale</strong><small>Avril 2027</small></div>
+        </article>
+        <article class="league-card">
+          <span class="phase-number">04</span>
+          <div><strong>Demi-finales</strong><small>Avril - mai 2027</small></div>
+        </article>
+        <article class="league-card final-card">
+          <span class="phase-number">05</span>
+          <div><strong>La grande finale</strong><small>Juin 2027</small></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="index.html" class="logo">FOOT<span>ZONE</span></a>
+    <p>Football, résultats et statistiques.</p>
+    <span>Ligue des champions</span>
+    <p> 2026 Foot Zone — .BG Company </p>
+  </footer>
+
+  <script src="lds.js"></script>
+</body>
+</html>

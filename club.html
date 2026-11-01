@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#050b16">
+    <title>Fiche club - FootZone</title>
+    <link rel="stylesheet" href="club.css">
+</head>
+<body>
+        <header class="topbar">
+
+        <a class="logo" href="index.html">
+            <span class="logo-ball">⚽</span>
+            Foot<span>Zone</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Ouvrir le menu">
+            ☰
+        </button>
+
+        <nav class="nav">
+            <a href="index.html">Accueil</a>
+            <a href="premier.html">Premier League</a>
+            <a href="liga.html">Liga</a>
+            <a href="seria.html">Serie A</a>
+            <a href="bundesliga.html">Bundesliga</a>
+            <a href="ligue1.html">Ligue 1</a>
+            <a href="ldc.html">Ligue des champions</a>
+            <a href="club.html">Club européens</a>
+            <a href="joueur.html">Meilleurs joueurs</a>
+            <a href="favoris.html">Mes favoris</a>
+            <a href="trophe.html">Armoire à trophées</a>
+            <a href="classement.html">Classement mondial</a>
+        </nav>
+
+    </header>
+
+    <main class="container">
+        <section class="club-hero">
+            <div class="hero-content">
+                <span class="eyebrow">FOOTZONE · CLUB PROFILE</span>
+                <div class="club-heading">
+                    <div class="club-logo">
+                        <img id="clubLogo" src="" alt="Logo du club">
+                    </div>
+                    <div>
+                        <p class="club-country" id="clubCountry">Ligue des champions</p>
+                        <h1 id="clubName">Fiche du club</h1>
+                        <p class="club-subtitle" id="clubSubtitle">
+                            Toutes les informations sur le club
+                        </p>
+                    </div>
+                </div>
+
+                <div class="hero-tags">
+                    <span id="clubLeague">Ligue des champions</span>
+                    <span id="clubShort">CLUB</span>
+                    <span>Saison 2026-2027</span>
+                </div>
+            </div>
+
+            <div class="hero-decoration">⚽</div>
+        </section>
+
+        <section class="quick-stats">
+            <article class="stat-card">
+                <span>Matchs joués</span>
+                <strong id="statMatches">—</strong>
+                <small>Cette compétition</small>
+            </article>
+            <article class="stat-card">
+                <span>Victoires</span>
+                <strong id="statWins">—</strong>
+                <small>Matchs gagnés</small>
+            </article>
+            <article class="stat-card">
+                <span>Buts marqués</span>
+                <strong id="statGoals">—</strong>
+                <small>Total du club</small>
+            </article>
+            <article class="stat-card">
+                <span>Points</span>
+                <strong id="statPoints">—</strong>
+                <small>Classement européen</small>
+            </article>
+        </section>
+
+        <nav class="section-tabs" aria-label="Sections de la fiche club">
+            <a href="#informations">Présentation</a>
+            <a href="#effectif">Effectif</a>
+            <a href="#composition">Composition</a>
+            <a href="#statistiques">Statistiques</a>
+            <a href="#matchs">Matchs</a>
+            <a href="#palmares">Palmarès</a>
+        </nav>
+
+        <section class="content-section" id="informations">
+            <div class="section-title">
+                <div>
+                    <span class="eyebrow">IDENTITÉ DU CLUB</span>
+                    <h2>Présentation</h2>
+                </div>
+                <span class="section-number">01</span>
+            </div>
+
+            <div class="info-grid">
+                <article class="info-card">
+                    <span class="info-icon">📍</span>
+                    <div>
+                        <small>Ville</small>
+                        <strong id="clubCity">À compléter</strong>
+                    </div>
+                </article>
+                <article class="info-card">
+                    <span class="info-icon">🏟️</span>
+                    <div>
+                        <small>Stade</small>
+                        <strong id="clubStadium">À compléter</strong>
+                    </div>
+                </article>
+                <article class="info-card">
+                    <span class="info-icon">🧑‍💼</span>
+                    <div>
+                        <small>Entraîneur</small>
+                        <strong id="clubCoach">À compléter</strong>
+                    </div>
+                </article>
+                <article class="info-card">
+                    <span class="info-icon">📅</span>
+                    <div>
+                        <small>Année de création</small>
+                        <strong id="clubFounded">À compléter</strong>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section" id="effectif">
+            <div class="section-title">
+                <div>
+                    <span class="eyebrow">LES JOUEURS</span>
+                    <h2>Effectif</h2>
+                </div>
+                <span class="section-number">02</span>
+            </div>
+
+            <div class="roster-toolbar">
+                <p id="rosterCount">Effectif du club</p>
+                <input id="playerSearch" type="search"
+                    placeholder="Rechercher un joueur..."
+                    aria-label="Rechercher un joueur">
+            </div>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>N°</th>
+                            <th>Joueur</th>
+                            <th>Poste</th>
+                            <th>Nationalité</th>
+                        </tr>
+                    </thead>
+                    <tbody id="playersTable"></tbody>
+                </table>
+            </div>
+            <p class="muted" id="rosterNote"></p>
+        </section>
+
+        <section class="content-section" id="composition">
+            <div class="section-title">
+                <div>
+                    <span class="eyebrow">TACTIQUE ET FORMATION</span>
+                    <h2>Composition de l'équipe</h2>
+                </div>
+                <span class="section-number">03</span>
+            </div>
+
+            <div class="composition-toolbar">
+                <label for="formationSelect">Formation :</label>
+                <select id="formationSelect">
+                    <option value="4-3-3">4-3-3</option>
+                    <option value="4-2-3-1">4-2-3-1</option>
+                    <option value="4-4-2">4-4-2</option>
+                    <option value="3-5-2">3-5-2</option>
+                </select>
+            </div>
+
+            <div class="composition-pitch">
+                <div class="pitch-lines"></div>
+                <div class="pitch-box top"></div>
+                <div class="pitch-box bottom"></div>
+                <div id="compositionPlayers"></div>
+            </div>
+
+            <div class="substitutes-panel">
+                <h3>Remplaçants</h3>
+                <div id="compositionSubstitutes">
+                    <p>Les remplaçants apparaîtront ici.</p>
+                </div>
+            </div>
+
+            <p class="muted" id="compositionNote">
+                Composition à compléter pour ce club.
+            </p>
+        </section>
+
+
+        <section class="content-section" id="statistiques">
+            <div class="section-title">
+                <div>
+                    <span class="eyebrow">CHIFFRES CLÉS</span>
+                    <h2>Statistiques</h2>
+                </div>
+                <span class="section-number">04</span>
+            </div>
+
+            <div class="stats-panel">
+                <div class="stats-line">
+                    <span>Victoires</span>
+                    <strong id="detailWins">—</strong>
+                </div>
+                <div class="stats-line">
+                    <span>Matchs nuls</span>
+                    <strong id="detailDraws">—</strong>
+                </div>
+                <div class="stats-line">
+                    <span>Défaites</span>
+                    <strong id="detailLosses">—</strong>
+                </div>
+                <div class="stats-line">
+                    <span>Buts pour</span>
+                    <strong id="detailGoalsFor">—</strong>
+                </div>
+                <div class="stats-line">
+                    <span>Buts contre</span>
+                    <strong id="detailGoalsAgainst">—</strong>
+                </div>
+                <div class="stats-line">
+                    <span>Différence de buts</span>
+                    <strong id="detailGoalDiff">—</strong>
+                </div>
+            </div>
+            <p class="muted">
+                Les statistiques sont celles que tu renseignes dans club.js.
+            </p>
+        </section>
+
+        <section class="content-section" id="matchs">
+            <div class="section-title">
+                <div>
+                    <span class="eyebrow">CALENDRIER EUROPÉEN</span>
+                    <h2>Matchs du club</h2>
+                </div>
+                <span class="section-number">05</span>
+            </div>
+
+            <div class="match-columns">
+                <div>
+                    <h3>Derniers résultats</h3>
+                    <div class="match-list" id="pastMatches"></div>
+                </div>
+                <div>
+                    <h3>Prochains matchs</h3>
+                    <div class="match-list" id="upcomingMatches"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" id="palmares">
+            <div class="section-title">
+                <div>
+                    <span class="eyebrow">HISTOIRE ET TROPHÉES</span>
+                    <h2>Palmarès</h2>
+                </div>
+                <span class="section-number">05</span>
+            </div>
+
+            <div class="trophy-grid" id="trophyGrid"></div>
+        </section>
+
+        <div class="page-footer">
+            <a href="ldc.html">← Retour à la Ligue des champions</a>
+            <span>FOOTZONE · Le football en détail</span>
+        </div>
+    </main>
+
+    <script src="club.js"></script>
+<footer>
+    <p> 2026 Foot Zone — .BG Company </p>
+</footer>
+</body>
+</html>

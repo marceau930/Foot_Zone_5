@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mes joueurs favoris - FootZone</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="favoris.css">
+</head>
+
+<body class="favorites-page-body">
+  <main class="favorites-page">
+
+        <header class="topbar">
+        <a class="logo" href="index.html">
+            <span class="logo-ball">⚽</span>
+            Foot<span>Zone</span>
+        </a>
+        <button class="menu-toggle" aria-label="Ouvrir le menu">
+            ☰
+        </button>
+        <nav class="nav">
+            <a href="index.html">Accueil</a>
+            <a href="premier.html">Premier League</a>
+            <a href="liga.html">Liga</a>
+            <a href="seria.html">Serie A</a>
+            <a href="bundesliga.html">Bundesliga</a>
+            <a href="ligue1.html">Ligue 1</a>
+            <a href="ldc.html">Ligue des champions</a>
+            <a href="club.html">Club européens</a>
+            <a href="joueur.html">Meilleurs joueurs</a>
+            <a href="favoris.html">Mes favoris</a>
+            <a href="trophe.html">Armoire à trophées</a>
+            <a href="classement.html">Classement mondial</a>
+        </nav>
+
+    </header>
+
+    <section class="favorites-heading">
+      <div>
+        <div class="eyebrow">Ton espace personnel</div>
+
+        <h1>
+          Mes favoris
+          <span class="favorite-title-star">★</span>
+        </h1>
+
+        <p>
+          Retrouve ici tous les joueurs que tu as enregistrés.
+        </p>
+      </div>
+
+      <div class="count-pill">
+        <span id="favoritesCount">0</span> joueur(s)
+      </div>
+    </section>
+
+    <section
+      id="favoritesList"
+      class="favorites-list"
+      aria-live="polite">
+    </section>
+
+  </main>
+
+  <script src="favoris.js"></script>
+<footer>
+    <p> 2026 Foot Zone — .BG Company </p>
+</footer>
+</body>
+</html>
